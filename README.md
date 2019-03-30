@@ -1,6 +1,6 @@
 # Dream League Mobile
 
-Administer private fantasy football league via mobile.
+Private fantasy football league via mobile.
 
 https://play.google.com/store/apps/details?id=dreamleague.mobile
 
