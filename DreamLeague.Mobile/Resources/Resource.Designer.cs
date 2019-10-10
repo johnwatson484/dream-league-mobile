@@ -44,8 +44,8 @@ namespace DreamLeague.Mobile
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7f020000
-			public const int ic_launcher = 2130837504;
+			// aapt resource value: 0x7F010000
+			public const int ic_launcher = 2130771968;
 			
 			static Drawable()
 			{
@@ -60,8 +60,8 @@ namespace DreamLeague.Mobile
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int webview = 2131034112;
+			// aapt resource value: 0x7F020000
+			public const int webview = 2130837504;
 			
 			static Id()
 			{
@@ -76,7 +76,7 @@ namespace DreamLeague.Mobile
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f030000
+			// aapt resource value: 0x7F030000
 			public const int Main = 2130903040;
 			
 			static Layout()
@@ -92,11 +92,11 @@ namespace DreamLeague.Mobile
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7F040000
+			public const int ApplicationName = 2130968576;
 			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			// aapt resource value: 0x7F040001
+			public const int Hello = 2130968577;
 			
 			static String()
 			{
