@@ -1,0 +1,51 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: DownloadSecureFile@1
+  displayName: Download KeyStore file
+  name: keyStoreFile
+  inputs:
+    secureFile: DreamLeague.keystore
+
+- task: SonarCloudPrepare@2
+  inputs:
+    SonarCloud: 'SonarCloud'
+    organization: 'johnwatson484'
+    scannerMode: 'MSBuild'
+    projectKey: 'johnwatson484_dream-league-mobile'
+    projectName: 'dream-league-mobile'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: '**/*.sln'
+    arguments: '-p:AndroidKeyStore=true -p:AndroidSigningKeyStore=$(keyStoreFile.secureFilePath) -p:AndroidSigningKeyAlias=DreamLeague -p:AndroidSigningKeyPass=$(keyStorePassword) -p:AndroidSigningStorePass=$(keyStorePassword)'
+    zipAfterPublish: false
+
+- task: SonarCloudAnalyze@2
+  inputs:
+    jdkversion: 'JAVA_HOME_17_X64'
+
+- task: SonarCloudPublish@2
+  inputs:
+    pollingTimeoutSec: '300'
+
+- task: GooglePlayRelease@4
+  inputs:
+    serviceConnection: 'Google Play'
+    applicationId: dreamleague.mobile
+    action: 'SingleApk'
+    apkFile: '**/*-Signed.apk'
+    track: 'production'
+    changeLogFile: 'Files/ReleaseNotes.txt'
+    languageCode: 'en-GB'

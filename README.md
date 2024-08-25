@@ -9,7 +9,7 @@ https://play.google.com/store/apps/details?id=dreamleague.mobile
 
 ## Prerequisites
 
-Xamarin
+.NET 8
 
 ## License
 

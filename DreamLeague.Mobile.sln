@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamLeague.Mobile", "DreamLeague.Mobile\DreamLeague.Mobile.csproj", "{1EF61F75-AFA9-4689-95E4-E394CAD1F7CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamLeague.Mobile", "DreamLeague.Mobile\DreamLeague.Mobile.csproj", "{AF6B3A39-3F59-48A5-80D7-137525F9217E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1EF61F75-AFA9-4689-95E4-E394CAD1F7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EF61F75-AFA9-4689-95E4-E394CAD1F7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EF61F75-AFA9-4689-95E4-E394CAD1F7CC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{1EF61F75-AFA9-4689-95E4-E394CAD1F7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EF61F75-AFA9-4689-95E4-E394CAD1F7CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EF61F75-AFA9-4689-95E4-E394CAD1F7CC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AF6B3A39-3F59-48A5-80D7-137525F9217E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6B3A39-3F59-48A5-80D7-137525F9217E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6B3A39-3F59-48A5-80D7-137525F9217E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AF6B3A39-3F59-48A5-80D7-137525F9217E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6B3A39-3F59-48A5-80D7-137525F9217E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF6B3A39-3F59-48A5-80D7-137525F9217E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21F72770-9368-4BA8-8F35-ED5893B46AC2}
 	EndGlobalSection
 EndGlobal
